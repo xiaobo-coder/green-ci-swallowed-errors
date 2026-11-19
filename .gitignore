@@ -1,0 +1,5 @@
+out/
+paper/generated/
+__pycache__/
+*.pyc
+.DS_Store

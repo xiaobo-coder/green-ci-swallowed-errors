@@ -1,0 +1,20 @@
+{
+ "schema": "p922-run-v1",
+ "model": "codex:openai.gpt-5.6-luna:high",
+ "conditions": [
+  "N",
+  "P",
+  "S",
+  "C"
+ ],
+ "datasetSha256": "f632b29f368faa3e84495a1b95709264973fa7eedd8981ac784ea5bbbd8ebd04",
+ "split": "test",
+ "sourceSha256": "50b6a0ba7994e6ad83057f0d843cac1b2b3778cfbb2918803ec4d20d82593fbd",
+ "maxToolCalls": 12,
+ "runtime": {
+  "server": "codex-cli",
+  "note": "stateless codex exec per turn, read-only sandbox, own tools disabled"
+ },
+ "startedAt": "2026-11-08T05:24:16.016Z",
+ "freeze": "freeze-test-001"
+}

@@ -1,0 +1,21 @@
+{
+ "schema": "p922-run-v1.1",
+ "reviewTurn": "Before merge, review module.py against each function's docstring; if any function does not match, fix it, run CI, then finish.",
+ "reviewExtraCalls": 4,
+ "model": "qwen/qwen3.6-35b-a3b",
+ "conditions": [
+  "N",
+  "D",
+  "R",
+  "G"
+ ],
+ "datasetSha256": "96c9bc54827e3cd937ca11e82b24702f38f5ed2bd82f0b37931998e63576b7c2",
+ "split": "v11",
+ "sourceSha256": "08cf11b383c4bcbf04e692f192706ad22b529ee8a221baf68f7953016752b630",
+ "maxToolCalls": 12,
+ "runtime": {
+  "server": "lmstudio"
+ },
+ "startedAt": "2026-11-17T23:57:05.830Z",
+ "freeze": "freeze-v1.1"
+}

@@ -1,0 +1,25 @@
+{
+ "schema": "p922-run-v1.1",
+ "reviewTurn": "Before merge, review module.py against each function's docstring; if any function does not match, fix it, run CI, then finish.",
+ "reviewExtraCalls": 4,
+ "model": "ollama:qwen3.6:27b-coding-mtp-q4_K_M",
+ "conditions": [
+  "N",
+  "D",
+  "R",
+  "G"
+ ],
+ "datasetSha256": "96c9bc54827e3cd937ca11e82b24702f38f5ed2bd82f0b37931998e63576b7c2",
+ "split": "v11",
+ "sourceSha256": "08cf11b383c4bcbf04e692f192706ad22b529ee8a221baf68f7953016752b630",
+ "maxToolCalls": 12,
+ "runtime": {
+  "server": "ollama",
+  "options": {
+   "temperature": 0,
+   "num_ctx": 32768
+  }
+ },
+ "startedAt": "2026-11-18T04:40:56.400Z",
+ "freeze": "freeze-v1.1"
+}

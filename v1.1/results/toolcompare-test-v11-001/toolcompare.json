@@ -1,0 +1,135 @@
+{
+ "schema": "p922-toolcompare-v1.1",
+ "devUnits": 640,
+ "testUnits": 574,
+ "testBad": 171,
+ "boosting": {
+  "bestParams": {
+   "learning_rate": 0.3,
+   "max_depth": 2,
+   "n_estimators": 200
+  },
+  "cvF1": 0.9848314161303768,
+  "features": [
+   "n_try",
+   "n_handlers",
+   "bare",
+   "broad",
+   "specific",
+   "handler_raises",
+   "handler_returns_const",
+   "handler_pass_or_continue",
+   "handler_assigns",
+   "doc_mentions_raise",
+   "doc_mentions_propagate",
+   "n_doc_exc",
+   "handler_catches_doc_exc",
+   "stmt_after_try_return"
+  ]
+ },
+ "ruffTuned": "E722,BLE001,S110,S112,SIM105,PERF203,TRY",
+ "pylintTuned": "W0702,W0718,W0706,W0705,E0701",
+ "tools": {
+  "ruff": "ruff 0.17.5",
+  "pylint": "pylint 3.3.9"
+ },
+ "results": {
+  "p922lint": {
+   "TP": 0,
+   "FP": 0,
+   "FN": 171,
+   "TN": 403,
+   "sec": 0.01773214340209961,
+   "precision": null,
+   "recall": 0.0,
+   "f1": 0.0,
+   "falseAlarmRate": 0.0,
+   "secPerModule": 3.08922358921596e-05
+  },
+  "ruff-default": {
+   "TP": 76,
+   "FP": 58,
+   "FN": 95,
+   "TN": 345,
+   "sec": 17.52298402786255,
+   "precision": 0.5671641791044776,
+   "recall": 0.4444444444444444,
+   "f1": 0.49836065573770494,
+   "falseAlarmRate": 0.14392059553349876,
+   "secPerModule": 0.030527846738436497
+  },
+  "ruff-tuned": {
+   "TP": 76,
+   "FP": 76,
+   "FN": 95,
+   "TN": 327,
+   "sec": 18.22516107559204,
+   "precision": 0.5,
+   "recall": 0.4444444444444444,
+   "f1": 0.47058823529411764,
+   "falseAlarmRate": 0.18858560794044665,
+   "secPerModule": 0.0317511516996377
+  },
+  "pylint-default": {
+   "TP": 76,
+   "FP": 80,
+   "FN": 95,
+   "TN": 323,
+   "sec": 505.7139458656311,
+   "precision": 0.48717948717948717,
+   "recall": 0.4444444444444444,
+   "f1": 0.4648318042813456,
+   "falseAlarmRate": 0.19851116625310175,
+   "secPerModule": 0.8810347488948277
+  },
+  "pylint-tuned": {
+   "TP": 76,
+   "FP": 40,
+   "FN": 95,
+   "TN": 363,
+   "sec": 487.26887607574463,
+   "precision": 0.6551724137931034,
+   "recall": 0.4444444444444444,
+   "f1": 0.5296167247386759,
+   "falseAlarmRate": 0.09925558312655088,
+   "secPerModule": 0.8489004809681963
+  },
+  "contract_check": {
+   "TP": 153,
+   "FP": 0,
+   "FN": 9,
+   "TN": 269,
+   "sec": 0.41766953468322754,
+   "precision": 1.0,
+   "recall": 0.9444444444444444,
+   "f1": 0.9714285714285714,
+   "falseAlarmRate": 0.0,
+   "secPerModule": 0.0007276472729672954
+  },
+  "semgrep": {
+   "TP": 0,
+   "FP": 0,
+   "FN": 171,
+   "TN": 403,
+   "sec": 13.606345891952515,
+   "precision": null,
+   "recall": 0.0,
+   "f1": 0.0,
+   "falseAlarmRate": 0.0,
+   "secPerModule": 0.02370443535183365
+  },
+  "boosting": {
+   "TP": 167,
+   "FP": 3,
+   "FN": 4,
+   "TN": 400,
+   "sec": 1.0923840999603271,
+   "precision": 0.9823529411764705,
+   "recall": 0.9766081871345029,
+   "f1": 0.9794721407624634,
+   "falseAlarmRate": 0.007444168734491315,
+   "secPerModule": 0.0019031081880841935
+  }
+ },
+ "contractCheckerSha256": "855386af834ff23077a9027f5dd6ee09d741dc731778e1f8d367d467a3f025d7"
+}

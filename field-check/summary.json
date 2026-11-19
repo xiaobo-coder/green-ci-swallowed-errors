@@ -1,0 +1,56 @@
+{
+ "source": "nuprl/AgentPack@3e8457c45652cd1b8333dcf20d040b974ee91a11",
+ "files": [
+  "codex-202505.jsonl.gz",
+  "cursor-202506.jsonl.gz",
+  "claude-202505.jsonl.gz"
+ ],
+ "postHoc": true,
+ "byAgent": {
+  "Codex": {
+   "events": 452,
+   "eventsPy": 135,
+   "handlersAdded": 88,
+   "broadAdded": 61,
+   "broadSwallowAdded": 11,
+   "specificAdded": 27,
+   "specificSwallowAdded": 6,
+   "eventsBroadSwallow": 10,
+   "suppAdded": 27,
+   "suppRemoved": 8,
+   "eventsSuppAdded": 14,
+   "narrowings": 1,
+   "eventsNarrowing": 1
+  },
+  "Cursor Agent": {
+   "events": 4922,
+   "eventsPy": 739,
+   "handlersAdded": 2724,
+   "broadAdded": 2013,
+   "broadSwallowAdded": 718,
+   "specificAdded": 711,
+   "specificSwallowAdded": 241,
+   "eventsBroadSwallow": 158,
+   "suppAdded": 358,
+   "suppRemoved": 132,
+   "eventsSuppAdded": 74,
+   "narrowings": 22,
+   "eventsNarrowing": 10
+  },
+  "Claude Code": {
+   "events": 19627,
+   "eventsPy": 3565,
+   "handlersAdded": 14563,
+   "broadAdded": 10187,
+   "broadSwallowAdded": 4320,
+   "specificAdded": 4376,
+   "specificSwallowAdded": 1591,
+   "eventsBroadSwallow": 970,
+   "suppAdded": 647,
+   "suppRemoved": 302,
+   "eventsSuppAdded": 144,
+   "narrowings": 128,
+   "eventsNarrowing": 92
+  }
+ }
+}

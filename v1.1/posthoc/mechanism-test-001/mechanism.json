@@ -1,0 +1,133 @@
+{
+ "postHoc": true,
+ "units": 574,
+ "acceptance": {
+  "nBad": 162,
+  "nGood": 269,
+  "rules": {
+   "ci": {
+    "wrongAccepted": 0.8580246913580247,
+    "correctRejected": 0.17472118959107807
+   },
+   "ciRuff": {
+    "wrongAccepted": 0.5,
+    "correctRejected": 0.30855018587360594
+   },
+   "ciPylint": {
+    "wrongAccepted": 0.5,
+    "correctRejected": 0.21189591078066913
+   },
+   "ciRuffPylint": {
+    "wrongAccepted": 0.5,
+    "correctRejected": 0.30855018587360594
+   },
+   "ciTrivial": {
+    "wrongAccepted": 0.0,
+    "correctRejected": 0.5390334572490706
+   },
+   "ciContract": {
+    "wrongAccepted": 0.006172839506172839,
+    "correctRejected": 0.17472118959107807
+   }
+  }
+ },
+ "recallByForm": {
+  "except Exception, swallows": {
+   "n": 69,
+   "ruffRec": 1.0,
+   "pylintRec": 1.0
+  },
+  "narrowed, still swallows": {
+   "n": 85,
+   "ruffRec": 0.0,
+   "pylintRec": 0.0
+  },
+  "bare except kept": {
+   "n": 7,
+   "ruffRec": 1.0,
+   "pylintRec": 1.0
+  },
+  "broken": {
+   "n": 8,
+   "ruffRec": 0.0,
+   "pylintRec": 0.0
+  },
+  "handler removed": {
+   "n": 2,
+   "ruffRec": 0.0,
+   "pylintRec": 0.0
+  }
+ },
+ "narrowing": {
+  "nNarrowedWrong": 85,
+  "catchesDocumentedExc": 85,
+  "byKey": {
+   "W05j|True": 15,
+   "W05t|True": 20,
+   "W05l|True": 20,
+   "W05|True": 30
+  }
+ },
+ "budget": {
+  "qwen/qwen3.6-35b-a3b|N": {
+   "n": 47,
+   "budgetExhausted": 0.0851063829787234,
+   "meanCalls": 7.829787234042553
+  },
+  "qwen/qwen3.6-35b-a3b|D": {
+   "n": 48,
+   "budgetExhausted": 0.020833333333333332,
+   "meanCalls": 7.645833333333333
+  },
+  "qwen/qwen3.6-35b-a3b|R": {
+   "n": 48,
+   "budgetExhausted": 0.10416666666666667,
+   "meanCalls": 11.5625
+  },
+  "qwen/qwen3.6-35b-a3b|G": {
+   "n": 48,
+   "budgetExhausted": 0.16666666666666666,
+   "meanCalls": 9.541666666666666
+  },
+  "openai/gpt-oss-20b|N": {
+   "n": 48,
+   "budgetExhausted": 0.1875,
+   "meanCalls": 8.333333333333334
+  },
+  "openai/gpt-oss-20b|D": {
+   "n": 48,
+   "budgetExhausted": 0.22916666666666666,
+   "meanCalls": 7.1875
+  },
+  "openai/gpt-oss-20b|R": {
+   "n": 48,
+   "budgetExhausted": 0.25,
+   "meanCalls": 10.854166666666666
+  },
+  "openai/gpt-oss-20b|G": {
+   "n": 48,
+   "budgetExhausted": 0.16666666666666666,
+   "meanCalls": 7.125
+  },
+  "ollama:qwen3.6:27b-coding-mtp-q4_K_M|N": {
+   "n": 48,
+   "budgetExhausted": 0.0,
+   "meanCalls": 6.5625
+  },
+  "ollama:qwen3.6:27b-coding-mtp-q4_K_M|D": {
+   "n": 48,
+   "budgetExhausted": 0.0,
+   "meanCalls": 6.333333333333333
+  },
+  "ollama:qwen3.6:27b-coding-mtp-q4_K_M|R": {
+   "n": 48,
+   "budgetExhausted": 0.08333333333333333,
+   "meanCalls": 9.958333333333334
+  },
+  "ollama:qwen3.6:27b-coding-mtp-q4_K_M|G": {
+   "n": 47,
+   "budgetExhausted": 0.0,
+   "meanCalls": 6.957446808510638
+  }
+ }
+}
