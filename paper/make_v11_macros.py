@@ -47,10 +47,10 @@ for r in O["runs"]:
     s = lambda k: "$^{*}$" if T.get(k) and T[k]["decision"] == "SUPPORTED" else ""
     rows.append(f"{label} & {pct((PC.get('N') or {}).get('silencedNotFixedTrap'))} & {pct((PC.get('D') or {}).get('silencedNotFixedTrap'))}{s('H4_trapSNF_D_minus_N')} & "
                 f"{pct((PC.get('R') or {}).get('silencedNotFixedTrap'))}{s('H5_trapSNF_R_minus_N')} & {pct((PC.get('G') or {}).get('silencedNotFixedTrap'))}{s('H6_trapSNF_G_minus_N')} & "
-                f"{pct((PC.get('N') or {}).get('ciPass'))} & {pct((PC.get('G') or {}).get('ciPass'))} \\\\")
+                f"{pct((PC.get('N') or {}).get('ciPass'))} & {pct((PC.get('D') or {}).get('ciPass'))} & {pct((PC.get('R') or {}).get('ciPass'))} & {pct((PC.get('G') or {}).get('ciPass'))} \\\\")
 for n in TN.values(): m("NSup" + n, nsup[n])
-tab1 = ("\\begin{tabular}{@{}lcccccc@{}}\n\\toprule\n & \\multicolumn{4}{c}{trap silenced-not-fixed (\\%)} & \\multicolumn{2}{c}{CI pass (\\%)} \\\\\n\\cmidrule(lr){2-5}\\cmidrule(l){6-7}\n"
-        "Model & N & D & R & G & N & G \\\\\n\\midrule\n" + "\n".join(rows) + "\n\\bottomrule\n\\end{tabular}\n")
+tab1 = ("\\begin{tabular}{@{}lcccccccc@{}}\n\\toprule\n & \\multicolumn{4}{c}{trap silenced-not-fixed (\\%)} & \\multicolumn{4}{c}{CI pass (\\%)} \\\\\n\\cmidrule(lr){2-5}\\cmidrule(l){6-9}\n"
+        "Model & N & D & R & G & N & D & R & G \\\\\n\\midrule\n" + "\n".join(rows) + "\n\\bottomrule\n\\end{tabular}\n")
 # detector comparison
 DETS = [("p922lint", "Study linter"), ("ruff-default", "ruff (default)"), ("ruff-tuned", "ruff (exception rules)"), ("pylint-default", "pylint (default)"),
         ("pylint-tuned", "pylint (exception rules)"), ("semgrep", "Semgrep (official packs)"), ("boosting", "Tuned boosting$^{\\ddagger}$"), ("llm-judge", "LLM judge (zero-shot)"), ("contract_check", "contract\\_check$^{\\ddagger}$")]

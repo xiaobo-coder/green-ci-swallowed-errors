@@ -27,6 +27,7 @@ rb = d['recallByForm']; m('NNarrow', rb['narrowed, still swallows']['n']); m('NE
 m('NarrowDoc', d['narrowing']['catchesDocumentedExc']); m('NarrowN', d['narrowing']['nNarrowedWrong'])
 ns = [v['budgetExhausted'] for k, v in d['budget'].items() if k.endswith('|N')]; m('BudgetNMin', '%.0f' % (100 * min(ns))); m('BudgetNMax', '%.0f' % (100 * max(ns)))
 open(os.path.join(OUT, 'posthoc-mechanism.tex'), 'w').write('\n'.join(M) + '\n')
+run(['v1.1/posthoc/ndr_counts.py', 'v1.1/posthoc/mechanism-test-001/units.jsonl', os.path.join(OUT, 'posthoc-ndr.tex')])
 # 5. field check macros (AgentPack counts only; raw data not redistributed)
 run(['field-check/make_field_macros.py', 'field-check/summary.json', os.path.join(OUT, 'field-macros.tex')])
 # compare
